@@ -1,0 +1,29 @@
+# The configuration for OpenRewards, please read the docs.
+
+## // Basic configurations
+
+TOKEN: "" # The bot token, retrive from https://discord.com/developers/applications
+LOGGING: true # Enable basic logging for actions caused by the bot, user or more. Example: [LOG] Created profile for axisdadev (998819061817413652)
+DB: "data/users.json" # The name of the database used to store user data. Default = "db.json"
+STAFF_ROLES: [] # The list of staff role ids that are able to give users points and currency. Example: [1260625936685076613, 1260646882741456949]
+VERSION: "0.0.1 DEV" # Updated from github, touch if wanted. This doesnt affect much
+
+## // Customization
+
+CUSTOM_NAME: "Points" # Set a custom name for the points/rewards system. Example: American Miles, Southwest Points, Miles, Points
+ICON: "" # Set a discord emoji for the points/rewards icon. Example: <:SWAHeart:1260662835772657718>
+
+STATUS: true # Allow the bot to put quotes as its status.
+STATUS_OPTIONS: ["Change me!"] # The options that can be the statuses. Example: "Join Southwest!", "Fly american!", Or something silly. "I have 10 children locked in my basement."
+CHANGE_INTERVAL: 30 # The interval to change the status options.
+
+##  // Customization: Profile Page
+
+GREET_MSG: "Good day, {user}" # The greeting message when running the /profile command. {user} Will be replaced with username. Example: Good day, {user} will look like Good day, axisdadev.
+PRIVATE: false # Make the embed invisble/ephermal to other users?
+
+EMBED_IMAGE: "" # Add a discord media link to put as the image.
+EMBED_THUMBNAIL: "" # Add a discord media link to put as the thumbnail/icon of the embed.
+EMBED_COLOUR: "" # Set a hexidecimal color code to put as the embed colour. Example: #FFD700
+EMBED_DESCRIPTION: "" # The description of the embed. Example: Here are your points, {user}. will look like Here are your points, axisdadev.
+

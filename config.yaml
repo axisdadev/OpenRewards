@@ -1,0 +1,28 @@
+# The configuration for OpenRewards, please read the docs.
+
+## // Basic configurations
+
+TOKEN: "MTI3MDQyNjU5OTc3NDM1NTUyOA.GzHe1l.7Y435W6_I94LLCaCZopj73L_ebhF1t6oO-QpI4" # The bot token, retrive from https://discord.com/developers/applications
+LOGGING: true # Enable basic logging for actions caused by the bot, user or more. Example: [LOG] Created profile for axisdadev (998819061817413652)
+USER_DB: "data/users.json" # The name of the database used to store user data. Default = "data/users.json" 
+STAFF_ROLES: [] # The list of staff role ids that are able to give users points and currency. Example: [1260625936685076613, 1260646882741456949]
+VERSION: "0.0.1 DEV" # Updated from github, touch if wanted. This doesnt affect much
+
+## // Customization
+
+CUSTOM_NAME: "SigmaPoints" # Set a custom name for the points/rewards system. Example: American Miles, Southwest Points, Miles, Points
+ICON: "<:huh:1270427460067917904>" # Set a discord emoji for the points/rewards icon. Example: <:SWAHeart:1260662835772657718>
+
+STATUS: true # Allow the bot to put quotes as its status.
+STATUS_OPTIONS: ["I have 10 children locked in my basement", "I ate a child last night."] # The options that can be the statuses. Example: "Join Southwest!", "Fly american!", Or something silly. "I have 10 children locked in my basement."
+CHANGE_INTERVAL: 30 # The interval to change the status options.
+
+##  // Customization: Profile Page
+
+GREET_MSG: "Good day sigma, {user}" # The greeting message when running the /profile command. {user} Will be replaced with username. Example: Good day, {user} will look like Good day, axisdadev.
+PRIVATE: true # Make the embed invisble/ephermal to other users?
+
+EMBED_IMAGE: "https://cdn.discordapp.com/attachments/1260657874829316238/1270162801410707457/SWA_Advert_2024_Ver3.png?ex=66b35b8a&is=66b20a0a&hm=0109ec51f2b4bdbc9f230ca5630a39c3a35a1cb6d7cece8d9092cdc42883f98f&" # Add a discord media link to put as the image.
+EMBED_THUMBNAIL: "https://cdn.discordapp.com/attachments/1260626688728109137/1263045210011865118/0a92d260-9421-461e-8ce7-cc69de2252ab.png?ex=66b32c04&is=66b1da84&hm=3a15afd6c26a0e7cff6a1798e4911a490651b30d804ddbe6c1af31ad3244428f&" # Add a discord media link to put as the thumbnail/icon of the embed.
+EMBED_COLOUR: "#FFFF00" # Set a hexidecimal color code to put as the embed colour. Example: #FFD700
+EMBED_DESCRIPTION: "hi sigma" # The description of the embed. Example: Here are your points, {user}. will look like Here are your points, axisdadev.
