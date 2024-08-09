@@ -17,9 +17,9 @@ The comments are already self explaintory, ``TOKEN`` is your bot's token, You ca
 
 > The ``LOGGING`` variable is either to enable or disable output logs in the python program. Example: [LOG] Created profile for axisdadev (998819061817413652) (Not recommended to disable!)
 
-> The ```USER_DB`` variable is a string type, leading to where the data storing with TinyDB shall be located. This must be a .json file with the name "users"
+> The ``USER_DB`` variable is a string type, leading to where the data storing with TinyDB shall be located. This must be a .json file with the name "users"
 
-> The ```STAFF_ROLES`` variable is a list with snowflake types, of the discord role ids. Developer mode must be enabled to get a role id. Learn how to enable it [here](<https://www.howtogeek.com/714348/how-to-enable-or-disable-developer-mode-on-discord/>), Right click on a users role or in the role management page to get them.
+> The ``STAFF_ROLES`` variable is a list with snowflake types, of the discord role ids. Developer mode must be enabled to get a role id. Learn how to enable it [here](<https://www.howtogeek.com/714348/how-to-enable-or-disable-developer-mode-on-discord/>), Right click on a users role or in the role management page to get them.
 
 > The ```VERSION``` variable Is updated through github, this wont affect much if changed. feel free to do so!
 
@@ -77,9 +77,9 @@ FOOTER_ICON: "https://cdn.discordapp.com/attachments/1260626688728109137/1270401
 
 > The ``EMBED_DESCRIPTION`` Variable is self explainatory, the description of the embed.
 
-> The ```AUTHOR_NAME`` Variable is self explainatory, the author name of the embed.
+> The ``AUTHOR_NAME`` Variable is self explainatory, the author name of the embed.
 
-> The ```AUTHOR_ICON`` Variable is self explainatory, the icon for the author of the embed, Must be discord media link or other.
+> The ``AUTHOR_ICON`` Variable is self explainatory, the icon for the author of the embed, Must be discord media link or other.
 
 > The ``FOOTER`` Variable is self explainatory, the footer text of any embed.
 
@@ -94,11 +94,11 @@ MAXIMUM_ADD: 10000 # The maximum points a staff member is able to add to a user 
 MAXIMUM_SUB: 10000 # The maximum points a staff member is able to remove from a user at once, Recommended 10000.
 BYPASS_ROLE: [1270949019677495378] # Set a list of roles or one that allow this limit to be bypassed. Example: [1260625936685076613, 1260646882741456949]
 ```
-> The ```MAXIMUM_ADD`` Variable is a integer of the maxium points a staff member is allowed to add.
+> The ``MAXIMUM_ADD`` Variable is a integer of the maxium points a staff member is allowed to add.
 
-> The ```MAXIMUM_SUB`` Variable is a integer of the maxium points a staff member is allowed to remove.
+> The ``MAXIMUM_SUB`` Variable is a integer of the maxium points a staff member is allowed to remove.
 
-> The ```BYPASS_ROLE`` Variable is a list of the allowed staff role ids that can bypass these restrictions, Only give this to trusted users.
+> The ``BYPASS_ROLE`` Variable is a list of the allowed staff role ids that can bypass these restrictions, Only give this to trusted users.
 
 **Part 5**
 Notifications & Discord logging
