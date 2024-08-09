@@ -16,8 +16,11 @@ VERSION: "0.0.1 DEV" # Updated from github, touch if wanted. This doesnt affect 
 The comments are already self explaintory, ``TOKEN`` is your bot's token, You can learn how to setup your bot for production in [This Guide](<https://github.com/axisdadev/OpenRewards/blob/main/guides/production_bot/Guide.md>)
 
 > The ``LOGGING`` variable is either to enable or disable output logs in the python program. Example: [LOG] Created profile for axisdadev (998819061817413652) (Not recommended to disable!)
+
 > The ```USER_DB`` variable is a string type, leading to where the data storing with TinyDB shall be located. This must be a .json file with the name "users"
+
 > The ```STAFF_ROLES`` variable is a list with snowflake types, of the discord role ids. Developer mode must be enabled to get a role id. Learn how to enable it [here](<https://www.howtogeek.com/714348/how-to-enable-or-disable-developer-mode-on-discord/>), Right click on a users role or in the role management page to get them.
+
 > The ```VERSION``` variable Is updated through github, this wont affect much if changed. feel free to do so!
 
 **Part 2**
@@ -33,10 +36,13 @@ CHANGE_INTERVAL: 30 # The interval to change the status options.
 ```
 
 > The ``CUSTOM_NAME`` variable is a string for the name of your rewards/point system. This can be whatever you want.
+
 > The ``ICON`` variable is a string for the icon of your points in discord, This can be left blank or set to a discord emoji. To set it to a discord emoji. Go to the discord developers page. Click on your bot and find where the "EMOJIS" Tab is, upload your emoji. Once uploaded. Click the copy button that says "Copy Markdown" and set it to that variable.
 
 > The ``STATUS`` Variable is to enable or disable the bot status options. 
+
 > The ``STATUS_OPTIONS`` Variable is to make a list of the statuses that will be randomly picked over a time interval. Example ["Test 1", "Test 2", "Test 3"].
+
 > The ``CHANGE_INTERVAL`` Variable is a interger to define the amount of time before the statuses switch.
 
 ** Part 3**
@@ -60,16 +66,23 @@ FOOTER_ICON: "https://cdn.discordapp.com/attachments/1260626688728109137/1270401
 ```
 
 > The ``GREET_MSG`` Variable is what to set the title of the embed to.
+
 > The ``PRIVATE`` Variable is rather to set the variable ephermal/invisible to other users. False = Visible to others, True = Invisible to others.
 
 > The ``EMBED_THUMBNAIL`` Variable is a media link for the embed, for the little icon in the top right.
+
 > The ``EMBED_IMAGE`` Variable is a media link for the embed, for the image at the bottom.
+
 > The ``EMBED_COLOUR`` Variable is a hexidemical code for the embed.
+
 > The ``EMBED_DESCRIPTION`` Variable is self explainatory, the description of the embed.
 
 > The ```AUTHOR_NAME`` Variable is self explainatory, the author name of the embed.
+
 > The ```AUTHOR_ICON`` Variable is self explainatory, the icon for the author of the embed, Must be discord media link or other.
+
 > The ``FOOTER`` Variable is self explainatory, the footer text of any embed.
+
 > The ``FOOTER_ICON`` Variable is self explainatory, the icon for the footer of the embed, Must be discord media link or other.
 
 
@@ -82,7 +95,9 @@ MAXIMUM_SUB: 10000 # The maximum points a staff member is able to remove from a 
 BYPASS_ROLE: [1270949019677495378] # Set a list of roles or one that allow this limit to be bypassed. Example: [1260625936685076613, 1260646882741456949]
 ```
 > The ```MAXIMUM_ADD`` Variable is a integer of the maxium points a staff member is allowed to add.
+
 > The ```MAXIMUM_SUB`` Variable is a integer of the maxium points a staff member is allowed to remove.
+
 > The ```BYPASS_ROLE`` Variable is a list of the allowed staff role ids that can bypass these restrictions, Only give this to trusted users.
 
 **Part 5**
@@ -95,5 +110,7 @@ DISCORD_LOG_CHANNEL: 1270952470461546598 # A channel ID to set where logs will b
 ```
 
 > The ``ENABLE_USER_NOTIFS`` Variable is to notify the user when their points are added to and removed from them. False = No notification, True = Will send a notification.
+
 > The ``ENABLE_DISCORD_LOGS`` Variable is to enable discord sided logging in channels for staff transactions and changes.
+
 > The ``DISCORD_LOG_CHANNEL`` Variable is to point the bot where to send messages to log, must be a channel id.
