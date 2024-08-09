@@ -13,6 +13,8 @@ Built with good intentions and the goal of customizability with easy setup to ge
 
 **THIS PROJECT IS BEST RAN ON A SERVER IN A VIRTUAL ENV.**
 
+![Video](<OpenRewardsDemo.mp4>)
+
 # Basic setup
 
 **Prerequistes**
