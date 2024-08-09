@@ -2,27 +2,44 @@
 
 ## // Basic configurations
 
-TOKEN: "MTI3MDQyNjU5OTc3NDM1NTUyOA.GzHe1l.7Y435W6_I94LLCaCZopj73L_ebhF1t6oO-QpI4" # The bot token, retrive from https://discord.com/developers/applications
+TOKEN: "" # The bot token, retrive from https://discord.com/developers/applications
 LOGGING: true # Enable basic logging for actions caused by the bot, user or more. Example: [LOG] Created profile for axisdadev (998819061817413652)
 USER_DB: "data/users.json" # The name of the database used to store user data. Default = "data/users.json" 
-STAFF_ROLES: [] # The list of staff role ids that are able to give users points and currency. Example: [1260625936685076613, 1260646882741456949]
+STAFF_ROLES: [1270948998248927253] # The list of staff role ids that are able to give users points and currency. Example: [1260625936685076613, 1260646882741456949]
 VERSION: "0.0.1 DEV" # Updated from github, touch if wanted. This doesnt affect much
 
 ## // Customization
 
-CUSTOM_NAME: "SigmaPoints" # Set a custom name for the points/rewards system. Example: American Miles, Southwest Points, Miles, Points
-ICON: "<:huh:1270427460067917904>" # Set a discord emoji for the points/rewards icon. Example: <:SWAHeart:1260662835772657718>
+CUSTOM_NAME: "Southwest Points" # Set a custom name for the points/rewards system. Example: American Miles, Southwest Points, Miles, Points
+ICON: "<:SWAIcon:1270867620673097820>" # Set a discord emoji for the points/rewards icon. Example: <:SWAHeart:1260662835772657718>
 
 STATUS: true # Allow the bot to put quotes as its status.
-STATUS_OPTIONS: ["I have 10 children locked in my basement", "I ate a child last night."] # The options that can be the statuses. Example: "Join Southwest!", "Fly american!", Or something silly. "I have 10 children locked in my basement."
+STATUS_OPTIONS: ["Fly Southwest!", "Low fares, no hidden fees. Thats TransFarency!", "Save up to 50% on your next flight!"] # The options that can be the statuses. Example: "Join Southwest!", "Fly american!", Or something silly. "I have 10 children locked in my basement."
 CHANGE_INTERVAL: 30 # The interval to change the status options.
 
 ##  // Customization: Profile Page
 
-GREET_MSG: "Good day sigma, {user}" # The greeting message when running the /profile command. {user} Will be replaced with username. Example: Good day, {user} will look like Good day, axisdadev.
+GREET_MSG: "<:SWAIcon:1270867620673097820> Hiya!, {user}!" # The greeting message when running the /profile command. {user} Will be replaced with username. Example: Good day, {user} will look like Good day, axisdadev.
 PRIVATE: true # Make the embed invisble/ephermal to other users?
 
-EMBED_IMAGE: "https://cdn.discordapp.com/attachments/1260657874829316238/1270162801410707457/SWA_Advert_2024_Ver3.png?ex=66b35b8a&is=66b20a0a&hm=0109ec51f2b4bdbc9f230ca5630a39c3a35a1cb6d7cece8d9092cdc42883f98f&" # Add a discord media link to put as the image.
-EMBED_THUMBNAIL: "https://cdn.discordapp.com/attachments/1260626688728109137/1263045210011865118/0a92d260-9421-461e-8ce7-cc69de2252ab.png?ex=66b32c04&is=66b1da84&hm=3a15afd6c26a0e7cff6a1798e4911a490651b30d804ddbe6c1af31ad3244428f&" # Add a discord media link to put as the thumbnail/icon of the embed.
-EMBED_COLOUR: "#FFFF00" # Set a hexidecimal color code to put as the embed colour. Example: #FFD700
-EMBED_DESCRIPTION: "hi sigma" # The description of the embed. Example: Here are your points, {user}. will look like Here are your points, axisdadev.
+EMBED_THUMBNAIL: "https://cdn.discordapp.com/attachments/1260626688728109137/1263045210011865118/0a92d260-9421-461e-8ce7-cc69de2252ab.png?ex=66b52644&is=66b3d4c4&hm=0005eda473003cbb0cd30838ec40716b41c9c074d8cafb7021345314a65a02e6&" # Add a discord media link to put as the image.
+EMBED_IMAGE: "https://cdn.discordapp.com/attachments/1260626688728109137/1270499844414378037/SWA_Advert_2024_Ver4.png?ex=66b53e2f&is=66b3ecaf&hm=606be46d8e9705d13b96d9ec6fe99d43197e158e3b683f9833ad67b2e063c1e9&" # Add a discord media link to put as the thumbnail/icon of the embed.
+EMBED_COLOUR: "#1b2d83" # Set a hexidecimal color code to put as the embed colour. Example: #FFD700
+EMBED_DESCRIPTION: "Good day, **Ready to fly, {user}?**" # The description of the embed. Example: Here are your points, {user}. will look like Here are your points, axisdadev.
+
+AUTHOR_NAME: "Southwest Rapid Rewards"
+AUTHOR_ICON: "https://cdn.discordapp.com/attachments/1260626688728109137/1270401886222159963/quicktemp.png?ex=66b4e2f4&is=66b39174&hm=f51491b112a70e4a4971d06578f13efa3a4eb9779d57031a2edf3883c0304ad0&"
+FOOTER: "Copyright Southwest PTFS 2024"
+FOOTER_ICON: "https://cdn.discordapp.com/attachments/1260626688728109137/1270401886222159963/quicktemp.png?ex=66b4e2f4&is=66b39174&hm=f51491b112a70e4a4971d06578f13efa3a4eb9779d57031a2edf3883c0304ad0&"
+
+## // Staff Limits
+
+MAXIMUM_ADD: 10000 # The maximum points a staff member is able to add to a user at once, Recommended 10000.
+MAXIMUM_SUB: 10000 # The maximum points a staff member is able to remove from a user at once, Recommended 10000.
+BYPASS_ROLE: [1270949019677495378] # Set a list of roles or one that allow this limit to be bypassed. Example: [1260625936685076613, 1260646882741456949]
+
+## // Notifications & Discord Logging
+
+ENABLE_USER_NOTIFS: true # Enable user notifications for points given and removed.
+ENABLE_DISCORD_LOGS: true # Enable discord logging for staff point additions and subtractions.
+DISCORD_LOG_CHANNEL: 1270952470461546598 # A channel ID to set where logs will be posted. Confirm bot has permission to send messaages in that channel.

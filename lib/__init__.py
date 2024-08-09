@@ -1,1 +1,1 @@
-import lib.logging, lib.profile
+import lib.logging, lib.profile, lib.discordLog

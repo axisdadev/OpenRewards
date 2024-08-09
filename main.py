@@ -7,6 +7,7 @@ with open("config.yaml") as conf:
 
 bot = lightbulb.BotApp(config['TOKEN'], intents=hikari.Intents.ALL_UNPRIVILEGED)
 bot.load_extensions_from("ext")
+bot.d.miru = miru.Client(bot)
 
 @tasks.task(s=int(config['CHANGE_INTERVAL']))
 async def statusChanger():

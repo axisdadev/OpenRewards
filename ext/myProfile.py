@@ -1,5 +1,6 @@
 import hikari, lightbulb
 from lib.profile import Profile
+import lib.discordLog
 
 plugin = lightbulb.Plugin("myProfile")
 
@@ -22,15 +23,30 @@ async def myProfile(ctx: lightbulb.Context):
         title=filteredTitle, description=filteredDescription, colour=profileManager.config['EMBED_COLOUR']
     )
     
-    constructEmbed.add_field(f"{profileManager.config['ICON']} {profileManager.config['CUSTOM_NAME']}", value=profile['points'])
-    constructEmbed.set_thumbnail(profileManager.config['EMBED_THUMBNAIL'])
-    constructEmbed.set_image(profileManager.config['EMBED_IMAGE'])
+    constructEmbed.add_field(f"{profileManager.config['ICON']} {profileManager.config['CUSTOM_NAME']}", value=f"> {profile['points']}")
+    
+    ## Details
+    
+    if not profileManager.config['EMBED_THUMBNAIL'] == None or profileManager.config['EMBED_THUMBNAIL'] == "":
+        constructEmbed.set_thumbnail(profileManager.config['EMBED_THUMBNAIL'])
+        
+    if not profileManager.config['EMBED_IMAGE'] == None or profileManager.config['EMBED_IMAGE'] == "":
+        constructEmbed.set_image(profileManager.config['EMBED_IMAGE'])
+    
+    if not profileManager.config['AUTHOR_NAME'] == None or profileManager.config['AUTHOR_NAME'] == "":
+        constructEmbed.set_author(name=profileManager.config['AUTHOR_NAME'], icon=profileManager.config['AUTHOR_ICON'])
+    
+    if not profileManager.config['FOOTER'] == None or profileManager.config['FOOTER'] == "":
+        constructEmbed.set_footer(text=profileManager.config['FOOTER'], icon=profileManager.config['FOOTER_ICON'])
+        
+    ## Final
     
     if profileManager.config['PRIVATE'] == True:
         await ctx.respond(embed=constructEmbed, flags=hikari.MessageFlag.EPHEMERAL)
     else:
         await ctx.respond(embed=constructEmbed)
-        
+    
+    
     
     
 
