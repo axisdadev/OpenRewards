@@ -39,7 +39,7 @@ Next, install the nessecary packages for the program via running the command
 
 ```pip install -r requirements.txt```
 
-Wait for installation to finish, once complete. Get your discord bot token via the discord developer website. Enable the users, guild and other intents as required. [Getting your token and setting up your bot for production.]
+Wait for installation to finish, once complete. Get your discord bot token via the discord developer website. Enable the users, guild and other intents as required. [Getting your token and setting up your bot for production.](<https://github.com/axisdadev/OpenRewards/blob/main/guides/production_bot/Guide.md>)
 
 Once the bot has been invited and you have the token, open the ``config.yaml`` file, and insert it in the ``TOKEN`` field, You can delete the current ``config.yaml`` and replace it with ``default_config.yaml`` if you want a clean slate, if you want a premade version to test out the bot. Use the current config.
 
