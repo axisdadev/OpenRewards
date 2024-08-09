@@ -43,7 +43,7 @@ Wait for installation to finish, once complete. Get your discord bot token via t
 
 Once the bot has been invited and you have the token, open the ``config.yaml`` file, and insert it in the ``TOKEN`` field, You can delete the current ``config.yaml`` and replace it with ``default_config.yaml`` if you want a clean slate, if you want a premade version to test out the bot. Use the current config.
 
-Once complete, and you're done filling out the configuration as wanted. Run your code via using the command. [Filling out the configuration.]
+Once complete, and you're done filling out the configuration as wanted. Run your code via using the command. [Filling out the configuration.](<https://github.com/axisdadev/OpenRewards/blob/main/guides/configuring_the_file/Guide.md>)
 
 ```python main.py```
 
