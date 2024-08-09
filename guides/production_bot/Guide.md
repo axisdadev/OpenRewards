@@ -81,24 +81,24 @@ Click on the little box that says ``Bot``
 
 Once completed, everything should look like this.
 
-![Bot permissions](<bot_permissions.png>)
+![Bot permissions](<images/bot_permissions.png>)
 
 Click on nessecary permissions as required, i recommend adding "Send Messages", "Embed Links", "Attach files", Add whatever else floats your boat. Do not turn on "ADMINSTRATOR", as it is not needed with the warning above. Besides that. Once completed, look below for the invite link and copy it.
 
-![Invite Copy](<copy_invite.png>)
+![Invite Copy](<images/copy_invite.png>)
 
 Once copied, paste your link into the browser. It should look something like this
 
-![Authorization](<authorization_final.png>)
+![Authorization](<images/authorization_final.png>)
 
 Click on the dropdown below and invite to the selected server. Once complete. Click "Continue", The new page should look like this. 
 
 
-![Authorization](<authorization_perms.png>)
+![Authorization](<images/authorization_perms.png>)
 
 Next, click on "Authorize", If all is good. You should get a sucess message and a notification that the bot has joined that server!
 
-![Final](<openrewards_invited.png>)
+![Final](<images/openrewards_invited.png>)
 
 And **tada! 🥳🎉**, you're all done! Configure whats needed in your config.yaml, and run the bot, It should work. If you have any issues, Please open a [Github Issue](<https://github.com/axisdadev/OpenRewards/issues>) for the time being.
 
