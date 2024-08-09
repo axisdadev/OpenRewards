@@ -219,7 +219,7 @@ async def panel(ctx: lightbulb.Context):
     userId = ctx.options.user.id
     user: hikari.User = ctx.options.user
     
-    if any(role_id in user.role_ids for role_id in profileManager.config['STAFF_ROLES']):
+    if any(role_id in ctx.member.role_ids for role_id in profileManager.config['STAFF_ROLES']):
         pass
     else:
         return await ctx.respond("🛑 You are not allowed to run this command, you have **insufficent permissions.**", flags=hikari.MessageFlag.EPHEMERAL)
