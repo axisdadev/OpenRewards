@@ -59,7 +59,7 @@ Authenticate with a multi factor security key or anything else as required. Once
 One completed, paste that into the ``TOKEN`` field of your configuration.yaml file.
 > ⚠️ **Fair warning, NEVER Share your bot token. If your bot has the right permissions in many servers. It can result in a rouge user nuking and deleting all of the channels, roles & messages.**
 
-![Pasting into place](<images/token_Yaml.png>)
+![Pasting into place](<images/tokenYaml.png>)
 
 > 🎉🥳 **Congrats!** You're done with this step! Now onto the next one :)
 
